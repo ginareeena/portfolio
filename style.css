@@ -12,9 +12,9 @@ footer {
   height: 200px;
 }
 
-/* background images for sections */
+/* Background Images for All Sections */
 
-#hero {
+#landing {
   background-image: url("./images/hero.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -30,6 +30,7 @@ footer {
   min-height: 980px;
   background-position: relative;
 }
+
 #portfolio {
   background-image: url("./images/portfolio.png");
   background-repeat: no-repeat;
@@ -37,6 +38,14 @@ footer {
   min-height: 900px;
   background-position: relative;
 }
+#skills {
+  background-image: url("./images/skills.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 900px;
+  background-position: relative;
+}
+
 #contact {
   background-image: url("./images/contact.png");
   background-repeat: no-repeat;
@@ -52,7 +61,6 @@ footer {
   background-position: center;
 
   color: white;
-
   height: 350px;
   z-index: 1;
   display: flex;
@@ -63,17 +71,17 @@ footer {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Centers landing page elements: speech bubble and buttons below */
+/* Centers Speech Bubble and Buttons Below It */
 #bubbleAndBtns {
-  padding: 100px 200px;
+  padding: 100px 250px 100px 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1000px;
+  width: 1100px;
   position: absolute;
 }
 
-/* Centers landing page buttons */
+/* Centers Explore and Learn More Buttons */
 #bubbleBtns {
   display: flex;
   flex-direction: column;
@@ -81,7 +89,7 @@ footer {
   margin: auto;
 }
 
-/* Landing page buttons */
+/* Explore and Learn More Btns Styles */
 
 #exploreBtn {
   background-color: #4e887c;
