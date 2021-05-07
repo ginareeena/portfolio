@@ -12,12 +12,15 @@ footer {
   height: 200px;
 }
 
+/* background images for sections */
+
 #hero {
   background-image: url("./images/hero.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 850px;
   background-position: top center;
+  z-index: -1;
 }
 
 #story {
@@ -42,6 +45,57 @@ footer {
   background-position: relative;
 }
 
-/*  */
-/* cover */
-/* background size- x = 100percent y=auto */
+#bubble {
+  background-image: url("./images/speechBubble.png");
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: center;
+
+  color: white;
+
+  height: 350px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Centers landing page elements: speech bubble and buttons below */
+#bubbleAndBtns {
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  position: absolute;
+}
+
+/* Centers landing page buttons */
+#bubbleBtns {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: auto;
+}
+
+/* Landing page buttons */
+
+#exploreBtn {
+  background-color: #4e887c;
+  border-radius: 0px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 17px;
+  color: white;
+}
+
+#learnMoreBtn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 17px;
+  margin-top: 5px;
+}
