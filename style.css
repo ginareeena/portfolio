@@ -12,90 +12,58 @@ footer {
   height: 200px;
 }
 
-/* Background Images for All Sections */
+section {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Landing Page Styles */
 
 #landing {
   background-image: url("./images/hero.png");
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-size: 100% auto;
   min-height: 1150px;
-  background-position: top center;
-  z-index: -1;
+  /* background-position: top center; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
-#story {
-  background-image: url("./images/story.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  /* background-size: cover; */
-  min-height: 980px;
-  background-position: relative;
+.spacer.landingLeft {
+  flex: 2 2 auto;
 }
-
-#portfolio {
-  background-image: url("./images/portfolio.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  min-height: 900px;
-  /* background-position: relative; */
-}
-
-#skills {
-  background-image: url("./images/skills.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  min-height: 900px;
-  background-position: relative;
-}
-
-#contact {
-  background-image: url("./images/contact.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  min-height: 1029px;
-  background-position: relative;
+.spacer.landingRight {
+  flex: 1 1 auto;
 }
 
 /* Centers Speech Bubble and Buttons Below It */
 #bubbleAndBtns {
-  padding: 55px 0px 0px 280px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  width: 1100px;
-  margin-left: 180px;
-  /* position: relative; */
-  /* margin: auto; */
+  flex: 0 0 400px;
+  align-items: center;
 }
 
 /* background image for bubble and sizes greeting text */
 #bubble {
-  background-image: url("./images/speechBubble.png");
+  position: relative;
+  background-size: 500px;
   background-repeat: no-repeat;
-  background-size: 40vw;
-  /* background-size: 46% auto; */
   background-position: center;
-  /* background-position: left 50px */
-  /* margin-left: 100px; */
-  /* background-attachment: fixed; */
-  /* background-position-x: 700px; */
-
-  /* position: relative; */
   color: white;
-  height: 420px;
-  z-index: 1;
-  display: flex;
-  /* justify-content: flex-start; */
-  /* margin-left: 50px; */
-  /* margin-left: 200px; */
-  /* align-items: flex-start; */
+  justify-content: center;
+}
+
+#bubble img {
+  position: absolute;
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#bubbleGreeting {
   font-size: 37px;
-  padding-top: 270px;
-  padding-left: 405px;
-  margin-bottom: 40px;
-  /* margin-right: -200px; */
-  /* margin-left: -200px; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -103,16 +71,8 @@ footer {
 /* styles second paragraph inside speech bubble */
 #bubbleBio {
   font-size: 33px;
-  color: white;
-  width: 1100px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  display: flex;
-  justify-content: center;
-  margin-top: -340px;
-  margin-bottom: 100px;
-  /* align-items: flex-start; */
-  /* position: relative; */
 }
 
 /* Centers Explore and Learn More Buttons */
@@ -141,4 +101,25 @@ footer {
   color: black;
   font-size: 20px;
   margin-top: 5px;
+}
+
+#story {
+  background-image: url("./images/story.png");
+  min-height: 1400px;
+}
+
+#portfolio {
+  background-image: url("./images/portfolio.png");
+  background-repeat: no-repeat;
+  min-height: 900px;
+}
+
+#skills {
+  background-image: url("./images/skills.png");
+  min-height: 900px;
+}
+
+#contact {
+  background-image: url("./images/contact.png");
+  min-height: 1029px;
 }
